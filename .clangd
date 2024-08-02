@@ -1,0 +1,12 @@
+CompileFlags:
+  Add: [-Wunreachable-code-aggressive]
+Diagnostics:
+  ClangTidy:
+    Add: [misc-unused-parameters,misc-unused-local-variable,misc-missing-switch-cases,misc-napi-module-name,modernize-use-auto,readability-system-capabilities,misc-replace-if-else-with-ternary-operator]
+    Remove: []
+    CheckOptions:
+      misc-unused-parameters.StrictMode: true
+      modernize-use-auto.MinTypeNameLength: 0
+
+  UnusedIncludes: Strict
+  UnusedFunctions: Check
